@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+:root {
+    --primary-color: #0e0a31;
+    --secondary-color: #43baff;
+    --heading-color: #7141b1;
+    --heading-2-color: #1b1d21;
+    --web-font-Montserrat: 'Montserrat', sans-serif;
+    --web-font-Nunito_Sans: 'Nunito Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* nav */
+
+/* Navigatio Bar */
+
+
+nav {
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    font-family: var(--web-font-Nunito_Sans);
+    height: 90px;
+    background-color: var(--primary-color);
+    border-bottom: #18143f solid 2px;
+}
+
+.nav-bar {
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.nav-logo img {
+    width: 9.5rem;
+}
+
+.nav-items ul li {
+    list-style: none;
+    margin: 0 30px;
+}
+
+.nav-items ul li a {
+    color: white;
+    font-weight: 600;
+    font-size: large;
+}
+
+.nav-items ul li a:hover {
+    color: var(--secondary-color);
+    transition: 0.3s;
+}
+
+.nav-cta a {
+    color: white;
+    border: 2px solid white;
+    padding: 13px 25px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: large;
+    transition: 0.3s;
+}
+
+.nav-cta a:hover {
+    border: 2px solid #3190c7;
+    color: white;
+    background-color: #3190c7;
+}
+/* nav {
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    font-family: var(--web-font-Nunito_Sans);
+    height: 90px;
+    background-color: var(--primary-color);
+    border-bottom: #18143f solid 2px;
+}
+
+.nav-bar {
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.nav-logo img {
+    width: 9.5rem;
+}
+
+.nav-items ul li {
+    list-style: none;
+    margin: 0 30px;
+}
+
+.nav-items ul li a {
+    color: white;
+    font-weight: 600;
+    font-size: large;
+}
+
+.nav-items ul li a:hover {
+    color: var(--secondary-color);
+    transition: 0.3s;
+}
+
+.nav-cta a {
+    color: white;
+    border: 2px solid white;
+    padding: 13px 25px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: large;
+    transition: 0.3s;
+}
+
+.nav-cta a:hover {
+    border: 2px solid #3190c7;
+    color: white;
+    background-color: #3190c7;
+} */
+
+
+/* services */
+.service-main-head {
+    background-color: var(--primary-color);
+    height: 300px;
+    background-image: url(./assets/asset\ 16.png);
+    background-size: cover;
+    background-position: bottom;
+}
+
+.ser-main-head-txt h1 {
+    margin: 6.5rem 0;
+    color: white;
+    font-family: var(--web-font-Montserrat);
+    font-size: 60px;
+}
+
+/* main */
+
+.service-category {
+    padding: 4rem 0;
+}
+
+.card-main{
+    margin: 4rem 0;
+}
+
+.service-category-head-txt {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service-category-head-txt span {
+    color: var(--heading-color);
+    font-family: var(--web-font-Montserrat);
+    font-weight: bold;
+}
+
+.service-category-head-txt h1 {
+    font-size: 3rem;
+    color: var(--heading-2-color);
+    font-family: var(--web-font-Montserrat);
+    font-weight: 800;
+}
+
+.service-category-head-lft {
+    line-height: 3rem;
+    width: 50%;
+}
+
+
+
+.service-category-head-rgt a {
+    font-family: var(--web-font-Montserrat);
+    background-color: var(--secondary-color);
+    padding: 13px 25px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: large;
+    transition: 0.3s;
+    color: white;
+}
+
+
+
+
+/* card */
+
+.service-cards {
+    flex-wrap: wrap;
+    padding: .7rem 0;
+    /* flex-direction: column; */
+    margin: auto;
+    justify-content: space-around;
+}
+
+.card-main {
+    background-color: #fff;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    width: 350px;
+    height: fit-content;
+    border: 1.5px solid rgba(128, 128, 128, 0.356);
+    justify-content: space-around;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.card-main:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.card {
+
+    width: 80%;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: center;
+
+}
+
+.card-icon {
+    margin: 50px 0 20px 0;
+    color: var(--heading-color);
+}
+
+.card-icon i {
+    display: inline;
+    font-size: 4rem;
+}
+
+.card-heading h3 {
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: var(--web-font-Montserrat);
+}
+
+.card-list {
+    /* float: left; */
+    list-style: none;
+    /* list-style: ; */
+}
+
+.card-list li {
+    font-weight: 600;
+    opacity: 0.7;
+    margin: 8px 0;
+    font-family: var(--web-font-Nunito_Sans);
+}
+
+
+#footer {
+    padding: 3rem 0 0 0;
+}

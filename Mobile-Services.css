@@ -1,0 +1,144 @@
+@media screen and (max-width: 480px) {
+  :root {
+    --primary-color: #0e0a31;
+    --secondary-color: #43baff;
+    --heading-color: #7141b1;
+    --heading-2-color: #1b1d21;
+    --web-font-Montserrat: "Montserrat", sans-serif;
+    --web-font-Nunito_Sans: "Nunito Sans", sans-serif;
+  }
+
+  body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .nav-items,
+  .nav-cta {
+    display: none;
+  }
+
+ /* services */
+.service-main-head {
+    background-color: var(--primary-color);
+    height: 100px;
+    background-image: url(./assets/asset\ 16.png);
+    background-size: cover;
+    background-position: bottom;
+}
+
+.ser-main-head-txt h1 {
+    margin: 2rem 0;
+    color: white;
+    font-family: var(--web-font-Montserrat);
+    font-size: 25px;
+}
+
+
+/* main */
+
+.service-category {
+    padding: 2rem 0;
+}
+
+
+
+.service-category-head-txt {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.service-category-head-txt span {
+    text-align: center;
+    color: var(--heading-color);
+    font-family: var(--web-font-Montserrat);
+    font-weight: bold;
+    font-size: small;
+}
+
+.service-category-head-txt h1 {
+    text-align: center;
+    font-size: large;
+    color: var(--heading-2-color);
+    font-family: var(--web-font-Montserrat);
+    font-weight: 800;
+}
+
+.service-category-head-lft {
+    line-height: 1.5rem;
+    width: 90%;
+}
+
+.service-category-head-rgt{
+    margin-top: 2rem;
+}
+.service-category-head-rgt a {
+    font-family: var(--web-font-Montserrat);
+    background-color: var(--secondary-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: small;
+    transition: 0.3s;
+    color: white;
+
+}
+
+/* card */
+
+.service-cards {
+    flex-wrap: wrap;
+    padding: .7rem 0;
+    /* flex-direction: column; */
+    margin: auto;
+    justify-content: space-around;
+}
+
+.card-main {
+    background-color: #fff;
+    margin: 1rem 0;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    width: 350px;
+    height: fit-content;
+    border: 1.5px solid rgba(128, 128, 128, 0.356);
+    justify-content: space-around;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+    .footerItems{
+    width: fit-content;
+  }
+
+  .footerItems span{
+    width: fit-content;
+  }
+
+  #footer{
+    text-align: center;
+    width: 90%;
+  }
+
+
+}

@@ -1,0 +1,237 @@
+@media screen and (max-width:480px) {
+
+    :root {
+        --primary-color: #0e0a31;
+        --secondary-color: #43baff;
+        --heading-color: #7141b1;
+        --heading-2-color: #1b1d21;
+        --web-font-Montserrat: 'Montserrat', sans-serif;
+        --web-font-Nunito_Sans: 'Nunito Sans', sans-serif;
+    }
+    
+    body {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+    
+    .flex {
+        display: flex;
+    }
+    
+    a {
+    
+        text-decoration: none;
+    }
+    
+    .nav-items,
+    .nav-cta {
+        display: none;
+    }
+
+      /* about */
+
+.project-main-head {
+    background-color: var(--primary-color);
+    height: 100px;
+    background-image: url(./assets/asset\ 16.png);
+    background-size: cover;
+    background-position: bottom;
+}
+
+.project-main-head-txt h1 {
+    margin: 2rem 0;
+    color: white;
+    font-family: var(--web-font-Montserrat);
+    font-size: 25px;
+}
+
+/* phead 2 */
+
+.project-heading {
+    margin: 2rem 0 4rem 0;
+}
+
+.project-heading-txt {
+    line-height: 2rem;
+    margin: auto;
+    width: 90%;
+    text-align: center;
+
+}
+
+.project-heading-txt span {
+    font-family: var(--web-font-Montserrat);
+    color: var(--heading-color);
+    font-weight: bold;
+    font-size: small;
+}
+
+.project-heading-txt h1 {
+    font-family: var(--web-font-Montserrat);
+    color: var(--heading-2-color);
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.project-heading-txt p {
+    font-size: 1rem;
+    margin-top: 15px;
+    line-height: 1.3rem !important;
+    color: #1b1d21b7;
+    font-family: var(--web-font-Nunito_Sans);
+}
+
+/* crousl section */
+
+.crousel-section {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    height: 70vh;
+}
+
+#wrapper {
+    width: 100%;
+    max-width: 1080px;
+    position: relative;
+}
+
+@media screen and (min-width:360px) {
+    #wrapper {
+        width: 80%;
+        max-width: 1080px;
+        position: relative;
+    }
+}
+
+#carousel {
+    overflow: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+#carousel::-webkit-scrollbar {
+    height: 0;
+}
+
+#prev,
+#next {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: white;
+    border: none;
+    padding: 8px;
+    border-radius: 50%;
+    outline: 0;
+    cursor: pointer;
+    position: absolute;
+}
+
+#prev {
+    top: 50%;
+    left: 0;
+    transform: translate(50%, -50%);
+    display: none;
+}
+
+#next {
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+}
+
+#content {
+    display: grid;
+    grid-gap: 16px;
+    grid-auto-flow: column;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.item {
+    border-radius: 20px;
+    width: 285px;
+    height: 250px;
+    /* background: green; */
+}
+
+.content-1 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-image: url(./assets/1946798-full.jpg);
+    background-size: cover;
+}
+
+.content-1-txt {
+    opacity: 0.7;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 0px 0 20px 20px;
+    height: 5rem;
+    background-color: var(--primary-color);
+    width: 100%;
+    gap: 0;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.content-1-txt:hover {
+    opacity: 1;
+}
+
+.content-1-txt h3 {
+    margin-top: 10px;
+    font-weight: 600;
+    text-align: center;
+    font-family: var(--web-font-Montserrat);
+    color: white;
+    font-size: 1.5rem;
+}
+
+.content-category {
+    margin: 0 0 12px 0;
+    border-radius: 3px;
+    padding: 3px;
+    height: fit-content;
+    width: fit-content;
+    background-color: #ffffff2d;
+}
+
+.content-category span {
+    font-size: 10px;
+    text-transform: uppercase;
+    color: rgb(209, 209, 209);
+    font-weight: bold;
+    font-family: var(--web-font-Nunito_Sans);
+}
+
+.footerItems{
+    width: fit-content;
+  }
+
+  .footerItems span{
+    width: fit-content;
+  }
+
+  #footer{
+    text-align: center;
+    width: 90%;
+  }
+
+
+}

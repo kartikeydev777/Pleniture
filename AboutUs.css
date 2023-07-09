@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+:root {
+    --primary-color: #0e0a31;
+    --secondary-color: #43baff;
+    --heading-color: #7141b1;
+    --heading-2-color: #1b1d21;
+    --web-font-Montserrat: 'Montserrat', sans-serif;
+    --web-font-Nunito_Sans: 'Nunito Sans', sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+#mobNav{
+    display: none;
+ }
+
+
+/* about */
+
+.about-us-main-head {
+    background-color: var(--primary-color);
+    height: 300px;
+    background-image: url(./assets/asset\ 16.png);
+    background-size: cover;
+    background-position: bottom;
+}
+
+.about-us-main-head-txt h1 {
+    margin: 6.5rem 0;
+    color: white;
+    font-family: var(--web-font-Montserrat);
+    font-size: 60px;
+}
+
+/* About Us Copy Section */
+
+.about-us-section{
+    padding:4rem 0;
+}
+
+.about-us-main{
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.about-us-main-lft{
+    /* margin: 10px 0; */
+    width: 50%;
+    flex-direction: column;
+}
+
+.about-us-main-lft-head{
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.about-us-main-lft-head span{
+    color: var(--heading-color);
+    font-family: var(--web-font-Montserrat);
+    font-weight: bold;
+}
+
+.about-us-main-lft-head h1{
+    margin-top: 5px;
+    color: var(--heading-2-color);
+    font-family: var(--web-font-Montserrat);
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+.about-us-main-lft-pra p{
+    font-family: var(--web-font-Nunito_Sans);
+    font-size: large;
+    color: #1b1d21bb;
+    line-height: 1.5rem;
+}
+
+.about-us-main-lft-pra span{
+    font-family: var(--web-font-Nunito_Sans);
+    font-style: italic;
+    font-weight: bold;
+}
+
+.about-us-main-rgt .image{
+    background-image: url(./assets/Header-hook-bg.jpg);
+    height: 65vh;
+    width: 35vw;
+    /* background-color: #cf6666; */
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.image-style{
+    height: 20vh;
+    width: 15vw;
+    background-image: url(./assets/1946798-full.jpg);
+    background-size: cover;
+    /* background-color: #1b1d21; */
+    position:relative;
+    left: -3rem;
+    top:22rem;
+    border-radius: 10px;
+    background-position: center;
+}
+
+/* Our vision */
+.our-vision{
+    padding: 4rem 0;
+}
+
+.our-vision-main{
+    align-items: center;
+    align-items: center;
+    padding: 30px 40px;
+    height:40vh;
+    background-color: #eeeeee;
+    border-radius: 20px;
+}
+
+.our-vision-main h1{
+    font-size: 3rem;
+    margin-right: 20px;
+    font-family: var(--web-font-Montserrat);
+    text-align: center;
+    color: #0e0a31;
+}
+
+.line{
+    margin-right: 20px;
+    height: 12rem;
+    width: 20px;
+    background-color: var(--heading-color);
+    border-radius: 50px;
+}
+.our-vision-main p{
+    margin-right: 20px;
+    line-height: 28px;
+    font-size: 1.1rem;
+    text-align: left;
+    font-family: var(--web-font-Nunito_Sans);
+    color: #202020d2;
+}
+
